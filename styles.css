@@ -1,0 +1,78 @@
+/* Best seller */
+.best-seller{padding:36px 0}
+.best-grid{display:grid;grid-template-columns:360px 1fr;gap:18px;align-items:start}
+.best-left{position:relative}
+.best-left img{width:100%;border-radius:12px;object-fit:cover}
+.best-left .pinned-
+bottom{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,0.95);padding:8px;border-radius:8px;font-weight:700} 
+.best-right .best-
+row{display:flex;gap:12px;margin-bottom:12px}
+.small-
+prod{background:#fff;padding:10px;border-radius:10px;flex:1;box-shadow:var(--shadow)}
+.small-prod
+img{width:100%;height:110px;object-fit:cover;border-radius:8px}
+.meta-small{font-size:12px;color:var(--muted);margin:6px 0} 
+/* Testimonials */
+.testimonial{padding:36px 0}
+.testimonials-grid{display:flex;gap:18px}
+.test-card{background:#fff;padding:16px;border-radius:12px;box-shadow:var(--shadow);flex:1;text-align:center} 
+.test-card 
+img{width:64px;height:64px;border-radius:50%;object-fit:cover;margin-bottom:10px}
+.quote{font-style:italic;color:var(--muted)}
+/* Blog */
+.blog{padding:36px 0}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.blog-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.blog-card img{width:100%;height:160px;object-fit:cover} 
+.blog-meta{position:relative;padding:10px;font-weight:700;color:var(--purple-700)}
+/* Follow */ 
+.follow{padding:36px 0}
+.instagram-grid{display:grid;grid-template-columns:repeat(9,1fr);gap:8px} 
+.instagram-grid img{width:100%;height:86px;object-fit:cover;border-radius:8px}
+/* FAQs */ 
+.faqs{padding:36px 0}
+.faqs-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+.faq-left
+details{background:#fff;padding:12px;border-radius:10px;margin-bottom:10px;box-shadow:var(--shadow)}
+.faq-left
+summary{cursor:pointer;padding:6px 0;font-weight:700}
+.help{background:#fff;padding:12px;border-radius:12px;box-shadow:var(--shadow);text-align:center}
+/* Newsletter */
+.subscribe{display:flex;gap:8px;margin-top:12px}
+.subscribe input{flex:1;padding:10px;border-radius:10px;border:1px solid #eee} 
+.subscribe button{padding:10px 14px;border-radius:10px;border:0;background:var(--purple-700);color:#fff}
+/* Footer */ 
+.site-footer{background:#faf7fd;padding:36px 0 12px;margin-top:30px;border-top:1px solid rgba(0,0,0,0.03)}
+.footer-grid{display:flex;gap:24px;align-items:flex-start}
+.footer-left{flex:1} 
+.footer-cols{display:flex;gap:18px}
+.col h5{margin:0 0 8px;color:var(--purple-700)} 
+.col ul{list-style:none;padding:0;margin:0} 
+.col ul li{color:var(--muted);margin-bottom:8px} 
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-top:1px solid rgba(0,0,0,0.04);margin-top:18px}
+/* Responsive */
+@media (max-width:1100px){
+  .hero-grid{grid-template-columns:1fr 340px} 
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .instagram-grid{grid-template-columns:repeat(6,1fr)}
+}
+@media (max-width:860px){
+  .nav-inner{flex-direction:column;gap:10px;align-items:flex-start} 
+  .menu{display:none} .hero-grid{grid-template-columns:1fr} 
+  .about-grid{grid-template-columns:1fr}
+  .best-grid{grid-template-columns:1fr}
+  .products-grid{grid-template-columns:1fr}
+  .arrival-grid{flex-direction:column}
+  .instagram-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:480px){
+  .topbar-inner{flex-direction:column;gap:8px}
+  .nav-actions 
+  .icon{width:22px;height:22px} 
+  .brand-name{display:none}
+  .hero-title{font-size:20px} 
+  .product-promo img{display:none} 
+  .instagram-grid{grid-template-columns:repeat(2,1fr)}
+  .occasions-list{justify-content:space-between} 
+  .footer-grid{flex-direction:column} 
+}
